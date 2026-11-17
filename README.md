@@ -169,7 +169,7 @@ As fontes devem ser verificadas para confirmar as informações e premissas util
 
 O vídeo técnico da disciplina de Soluções em Energias Renováveis e Sustentáveis demonstra o funcionamento do simulador, a comparação das alternativas e as principais recomendações.
 
-**Link do vídeo:** [INSERIR LINK DO YOUTUBE]
+**Link do vídeo:** (https://youtu.be/FzyCV8o0cM8)
 
 ## Integração entre disciplinas
 
