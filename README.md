@@ -3,7 +3,9 @@
 Assistente de terminal para orientar jovens sobre documentos, primeiro emprego, estagio e formacao. **Nao e um canal oficial.** Nao usa IA generativa: busca por regras.
 
 ## Integrantes
-- [NOME COMPLETO — RM]
+- Erick Banhos de Castro - 572131
+- Cauã Paes Vivaldo - 569906
+- João Pedro Soler - 569725
 
 ## ODS
 - ODS 4 — Educacao de qualidade
