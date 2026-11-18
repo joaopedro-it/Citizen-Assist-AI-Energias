@@ -1,18 +1,16 @@
 # Testes e Validação — Citizen Assist AI Energias
 
-## 1. Objetivo
+## Objetivo
 
-Avaliar a funcionalidade de simulação de economia energética do Citizen Assist AI, considerando diferentes perfis de consumo residencial.
+Verificar a coerência das estimativas energéticas e a clareza das orientações apresentadas pelo simulador.
 
-A avaliação busca verificar a clareza das informações, a coerência dos cálculos e a utilidade das recomendações relacionadas à eficiência energética e à energia solar fotovoltaica.
+## Metodologia
 
-## 2. Metodologia
+Foram definidos cinco cenários para avaliar diferentes níveis de consumo residencial, quantidades de lâmpadas e tarifas de eletricidade.
 
-Foram definidos cinco cenários de simulação, variando o consumo mensal, a quantidade de lâmpadas convencionais e a tarifa de eletricidade.
+Os cenários são simulações planejadas e não representam avaliações realizadas por participantes externos.
 
-Os cenários permitem avaliar o comportamento do sistema em diferentes condições de consumo.
-
-## 3. Cenários de teste
+## Cenários de simulação
 
 | Teste | Consumo mensal | Lâmpadas | Tarifa |
 |---|---|---|---|
@@ -22,72 +20,37 @@ Os cenários permitem avaliar o comportamento do sistema em diferentes condiçõ
 | 4 | 500 kWh | 10 | R$ 0,90 |
 | 5 | 150 kWh | 4 | R$ 1,10 |
 
-### Verificações previstas
+## Critérios de avaliação
 
-**Teste 1 — Baixo consumo**
+- Funcionamento do simulador com diferentes entradas.
+- Coerência dos cálculos de consumo e economia.
+- Comparação entre lâmpadas LED e energia solar.
+- Clareza das recomendações apresentadas.
+- Identificação dos custos e das limitações.
 
-Verificar se o programa apresenta estimativas compreensíveis para uma residência com consumo reduzido.
+## Validação técnica
 
-**Teste 2 — Consumo intermediário**
+O projeto possui testes automatizados no arquivo `test_energia.py`.
 
-Verificar a comparação financeira entre substituição de lâmpadas e geração solar.
+Para executar:
 
-**Teste 3 — Consumo elevado**
+`python -m unittest test_energia.py -v`
 
-Analisar o comportamento dos cálculos quando o consumo e a quantidade de lâmpadas aumentam.
+## Melhorias futuras
 
-**Teste 4 — Consumo muito elevado**
+- Adicionar gráficos comparativos.
+- Permitir a seleção de tarifas regionais.
+- Considerar a localização na estimativa de geração solar.
+- Ampliar as informações sobre retorno financeiro.
 
-Verificar se as recomendações continuam coerentes em um cenário de maior demanda energética.
+## Testes externos
 
-**Teste 5 — Tarifa diferente**
+A avaliação com participantes externos ainda não foi documentada.
 
-Verificar se a alteração da tarifa influencia corretamente as estimativas financeiras.
+Os cenários apresentados neste relatório não substituem testes reais de usabilidade.
 
-## 4. Exemplos fictícios de feedback
+## Conclusão
 
-As respostas abaixo são exemplos de como um participante poderia avaliar o sistema. Não representam entrevistas ou testes externos efetivamente realizados.
+O simulador permite comparar alternativas de eficiência energética e geração renovável com base em parâmetros informados pelo usuário.
 
-**Pergunta 1: O simulador é fácil de utilizar?**
-
-Exemplo: "Sim, achei o programa simples. As perguntas são diretas e não tive dificuldade para entender quais informações precisava inserir."
-
-**Pergunta 2: Os resultados apresentados são compreensíveis?**
-
-Exemplo: "Sim. Gostei de conseguir visualizar quanto poderia economizar com lâmpadas LED e energia solar."
-
-**Pergunta 3: As recomendações são úteis?**
-
-Exemplo: "Sim, principalmente porque mostram o investimento inicial e a economia estimada de cada alternativa."
-
-**Pergunta 4: O que poderia melhorar?**
-
-Exemplo: "Seria interessante adicionar gráficos para facilitar a comparação dos resultados."
-
-## 5. Melhorias propostas
-
-Com base na análise dos cenários, foram identificadas possíveis melhorias futuras:
-
-- Implementação de gráficos comparativos.
-- Inclusão de tarifas regionais de eletricidade.
-- Possibilidade de informar a potência real das lâmpadas.
-- Estimativas de geração solar considerando a localização.
-- Maior detalhamento dos custos e do retorno financeiro.
-
-Essas melhorias são propostas e não devem ser consideradas funcionalidades já implementadas.
-
-## 6. Limitações
-
-Os resultados energéticos são estimativas baseadas em parâmetros simplificados.
-
-Os custos de equipamentos, a geração solar e as economias financeiras podem variar conforme as condições reais.
-
-A execução dos cenários e a coleta de feedback externo devem ser documentadas separadamente quando realizadas.
-
-## 7. Conclusão
-
-Os cenários definidos permitem avaliar diferentes condições de consumo e comparar alternativas de economia energética.
-
-A funcionalidade oferece uma base para orientar usuários sobre eficiência energética e fontes renováveis.
-
-A validação com participantes externos permanece necessária para confirmar a facilidade de utilização e a compreensão das recomendações.
+Os resultados são estimativas didáticas, sujeitas às premissas e limitações descritas em `DADOS_E_CALCULOS.md`.
